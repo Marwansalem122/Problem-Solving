@@ -1,24 +1,23 @@
 #include<iostream>
 #include"strings/Delete Characters to Make Fancy String.cpp"
+#include"Strings/Uncommon Words from Two Sentences.cpp"
+#include"Strings/RotateString.cpp"
+#include<map>
 using namespace std;
 int main(){
-    // string s = "Marwan";
-//     size_t p = 0;
-//     size_t q = 1;
-// s.erase(s.begin()+1);
-// cout << s << endl;
-
-//     // Loop through each character using the pointer
-//     while (p<s.size()) {
-//         if(s[p]=='a'&& s[q]=='r'){
-//           s.erase(s.begin()+p, s.begin()+q+1);
-//         }
-//         q++;
-//         p++;
+//     int array[] = {1,2,3,4,5,1,5,6,-1,-3};
+//     int n = sizeof(array)/sizeof(array[0]);
+//     map<int,int> mp;
+//     while(n--){
+//         mp[(array[n])]++; 
 //     }
-// cout<<s<<endl;
-DeleteCharacterstoMakeFancyString obj=DeleteCharacterstoMakeFancyString();
-cout<<obj.makeFancyString("leeetcode")<<endl;
-cout<<obj.makeFancyString("aaabaaaa")<<endl;
-cout<<obj.makeFancyString("aab")<<endl;
+//    for(auto it:mp){
+//        cout<<it.first<<" "<<it.second<<endl;
+//    }
+RotateString rs=RotateString();
+// cout<<rs.rotateString("defdefdefabcabc","defdefabcabcdef");
+// cout<<rs.rotateString("abcde","cdeab");
+ cout<<rs.rotateString("abcde","abced");
+    return 0;
+
 }
