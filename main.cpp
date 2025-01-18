@@ -1,10 +1,10 @@
-#include<iostream>
+#include<bits/stdc++.h>
 
-#include"Strings/Sum of Digits of String After Convert.cpp"
-#include<map>
+#include"arrays/Two Sum.cpp"
 using namespace std;
 int main(){
   
-  SumOfDigitsOfStringAfterConvert sods=SumOfDigitsOfStringAfterConvert();
-  cout<<sods.getLucky("leetcode",2)<<endl;
+  TwoSum ts=TwoSum();
+  vector<int> v={2,7,11,15};
+  vector<int> result=ts.twoSum(v,9);
 }
