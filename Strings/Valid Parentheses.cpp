@@ -1,8 +1,8 @@
-#include<bits/stdc++.h>
-
-#include"arrays/Two Sum.cpp"
+#include <bits/stdc++.h>
 using namespace std;
-  bool IsValid(string s) {
+class VaalidParentheses{
+    public:
+      bool IsValid(string s) {
       if(s.size()==1||s[0]==')'||s[0]==']'||s[0]=='}') return false;
         stack<char> st;
         for(int i=0;i<s.length();i++){
@@ -10,7 +10,7 @@ using namespace std;
                 st.push(s[i]);
 
             }else {
-                if (st.empty()) return false;
+               
                 if(!st.empty()&&(s[i]==')'&&st.top()=='(')||(s[i]=='}'&&st.top()=='{')||(s[i]==']'&&st.top()=='[')){
                     st.pop();
                 }else{
@@ -21,9 +21,4 @@ using namespace std;
           return st.empty();
 
     }
-
-int main(){
-  cout<<IsValid("(([))]")<<endl;
-  cout<<IsValid("([])")<<endl; 
-
-}
+};
